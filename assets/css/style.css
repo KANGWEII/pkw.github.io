@@ -128,6 +128,7 @@ nav ul li a:hover {
     font-weight: 200;
     max-width: 400px;
     width:100%;
+    padding-bottom: 50px;
 }
 
 #content .home_blob {
@@ -229,7 +230,7 @@ nav ul li a:hover {
     transform: translate(5px, 5px);
 }
 
-#projects .heads {
+#desktopProjects .heads {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -245,7 +246,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-#projects .heading {
+#desktopPprojects .heading {
     display: block;
     line-height: 70px;
     max-width: 640px;
@@ -703,15 +704,22 @@ nav ul li a:hover {
     }
 }
 
+/* Mobile Section */
+
 .mobile-display {
     display: none
 }
 
 .desktop-display {
-    display: block
+    display: none;
 }
 
-@media (max-width: 1150px) {
+@media (min-width: 1150px) {
+    .desktop-display {display: block}
+    .mobile-display {display: none}
+}
+
+@media (min-width: 300px) and (max-width: 1150px) {
     .desktop-display {display: none}
     .mobile-display {display: block}
 }
@@ -720,14 +728,455 @@ nav ul li a:hover {
     position: absolute;
     width: 100%;
     max-width: 1150px;
-    padding: 0px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#mobile-content {
+    position: block;
+    max-width: 400px;
+}
+
+#mobile-content .home_blob {
+    display: flex;
     margin: 0 auto;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    width: auto;
+    min-width: 200px;
+}
+
+#mobile-content .home_blob .blob {
+    fill: var(--primary-color);
+}
+
+#mobile-content .home_blob .blob .blob_img {
+    width: 100px;
+}
+
+#mobile-content .column > .top-text {
+    padding-bottom: 15px;
+}
+
+#mobile-content .column > .top-text h1 {
+    display: block;
+    font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+    width: 100%;
+    padding-bottom:5px;
+}
+
+#mobile-content .column > .top-text > p {
+    display: block;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 100;
+    width:100%;
+}
+
+.mobile-ilustration-holder {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+}
+
+.mobile-ilustration {
+    padding-top: 10px;
+}
+
+#mobile-ilustration svg {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mobile-heads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 185px;
 }
 
 .mobile-heading {
+    display: block;
+    line-height: 70px;
+    max-width: 400px;
+    width: 100%;
+    padding-bottom:30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mobile-paragraph {
+    justify-content: center;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.mobile-button-text {
+    font-size: 12px;
+    font-family: Hurme,sans-serif;
+    font-weight: 550;
+    width: fit-content;
+    text-decoration: none;
+    position: relative;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+
+.mobile-underline {
+    fill-rule: nonzero;
+    clip-rule:evenodd;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    top: 90px; 
+    z-index: -1;
+    height: 100%;
+    width: 100px;
+    stroke-miterlimit: 10;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.mobile-row {
+    width: 100%;
+	max-width: 400px;
+	padding: 0px 10px;
+    margin: 0 auto;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.mobile-col-columns {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-column-block {
+    margin-bottom: 100px;
+}
+
+.mobile-svg-holder {
+    width: 100%;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+#mobile-first-waypoint {
+    opacity: 0;
+}
+
+#mobile-first-waypoint.start {
+    opacity: 1;
+}
+
+#mobile-first-waypoint.start .path0 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation:dash0 3s linear
+}
+
+#mobile-first-waypoint.start .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation:dash1 3s linear
+}
+
+#mobile-first-waypoint.start .path2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    animation:dash2 3s linear
+}
+
+#mobile-first-waypoint.start .path3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    animation:dash3 3s linear
+}
+
+#mobile-first-waypoint.start .path4 {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation:dash4 3s linear
+}
+
+#mobile-first-waypoint.start .path5 {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    animation:dash5 3s linear
+}
+
+#mobile-second-waypoint {
+    opacity: 0;
+}
+
+#mobile-second-waypoint.start {
+    opacity: 1;
+}
+
+#mobile-second-waypoint.start .path0 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation:dash0 3s linear
+}
+
+#mobile-second-waypoint.start .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation:dash1 3s linear
+}
+
+#mobile-second-waypoint.start .path2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    animation:dash2 3s linear
+}
+
+#mobile-second-waypoint.start .path3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    animation:dash3 3s linear
+}
+
+#mobile-second-waypoint.start .path4 {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation:dash4 3s linear
+}
+
+#mobile-second-waypoint.start .path5 {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    animation:dash5 3s linear
+}
+
+#mobile-third-waypoint {
+    opacity: 0;
+}
+
+#mobile-third-waypoint.start {
+    opacity: 1;
+}
+
+#mobile-third-waypoint.start .path0 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation:dash0 3s linear
+}
+
+#mobile-third-waypoint.start .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation:dash1 3s linear
+}
+
+#mobile-third-waypoint.start .path2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    animation:dash2 3s linear
+}
+
+#mobile-third-waypoint.start .path3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    animation:dash3 3s linear
+}
+
+#mobile-third-waypoint.start .path4 {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation:dash4 3s linear
+}
+
+#mobile-third-waypoint.start .path5 {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    animation:dash5 3s linear
+}
+
+#mobile-fourth-waypoint {
+    opacity: 0;
+}
+
+#mobile-fourth-waypoint.start {
+    opacity: 1;
+}
+
+#mobile-fourth-waypoint.start .path0 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation:dash0 3s linear
+}
+
+#mobile-fourth-waypoint.start .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation:dash1 3s linear
+}
+
+#mobile-fourth-waypoint.start .path2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    animation:dash2 3s linear
+}
+
+#mobile-fourth-waypoint.start .path3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    animation:dash3 3s linear
+}
+
+#mobile-fourth-waypoint.start .path4 {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation:dash4 3s linear
+}
+
+#mobile-fourth-waypoint.start .path5 {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    animation:dash5 3s linear
+}
+
+#mobile-fifth-waypoint {
+    opacity: 0;
+}
+
+#mobile-fifth-waypoint.start {
+    opacity: 1;
+}
+
+#mobile-fifth-waypoint.start .path0 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation:dash0 3s linear
+}
+
+#mobile-fifth-waypoint.start .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation:dash1 3s linear
+}
+
+#mobile-fifth-waypoint.start .path2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    animation:dash2 3s linear
+}
+
+#mobile-fifth-waypoint.start .path3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    animation:dash3 3s linear
+}
+
+#mobile-fifth-waypoint.start .path4 {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation:dash4 3s linear
+}
+
+#mobile-fifth-waypoint.start .path5 {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    animation:dash5 3s linear
+}
+
+.mobile-subheading {
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mobile-subparagraph {
+    text-align: justify;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+#contact .mobile-heads {
+    padding-top: 30px;
+}
+
+#contact .mobile-underline {
+    top: 13px;
+}
+
+.mobile-icon {
+    width: 18px;
+    margin-right: 15px;
+    vertical-align: middle;
+    margin-left: 15%;
+}
+
+#mobile-contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-bottom: 80px;
+}
+
+#mobile-contact-content .contact-paragraph {
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 250;
+    padding-bottom: 30px;
+}
+
+#mobile-contact-content .info {
+    line-height: 25px;
+    text-align: left;
+    margin: 0 auto;
+    width: 250px;
+}
+
+#mobile-contact-content p a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.mobile-heading1 {
     display: block;
     line-height: 70px;
     width: 100%;
@@ -735,7 +1184,7 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-.mobile-paragraph {
+.mobile-paragraph1 {
     text-align: justify;
     line-height: 30px;
     font-size: 20px;
