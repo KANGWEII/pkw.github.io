@@ -738,7 +738,7 @@ nav ul li a:hover {
 }
 
 #mobile-content .home_blob {
-    display: flex;
+    display: block;
     margin: 0 auto;
     width: auto;
     min-width: 200px;
@@ -839,6 +839,11 @@ nav ul li a:hover {
     position: relative;
     padding: 20px 50px;
     margin: 0 auto;
+}
+
+.mobile-btn {
+    color: #16181a;
+    border: 2px solid #16181a;
 }
 
 .mobile-underline {
