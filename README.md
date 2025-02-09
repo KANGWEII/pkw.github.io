@@ -1,7 +1,8 @@
 # Portfolio
+Welcome to my portfolio! This website showcases my projects and contact details. Built to be responsive, it works seamlessly on both mobile and desktop devices. Feel free to explore and reach out if you’d like to connect or collaborate!
+
 [<video controls src="media/demo.mp4" title="Demo"></video>](https://github.com/user-attachments/assets/6b630618-a49d-46d9-a6e1-df21f2608861)
 
-Welcome to my portfolio! This website showcases my projects and contact details. Built to be responsive, it works seamlessly on both mobile and desktop devices. Feel free to explore and reach out if you’d like to connect or collaborate!
 
 ## Features
 - **Responsive Design**: Optimized for both mobile and desktop viewing.
