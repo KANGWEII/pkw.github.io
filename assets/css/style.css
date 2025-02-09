@@ -144,7 +144,7 @@ nav ul li a:hover {
 }
 
 #content .home_blob .blob .blob_img {
-    width: 100px;
+    width: 160px;
 }
 
 .vspacer {
@@ -749,7 +749,7 @@ nav ul li a:hover {
 }
 
 #mobile-content .home_blob .blob .blob_img {
-    width: 100px;
+    width: 160px;
 }
 
 #mobile-content .column > .top-text {
@@ -758,7 +758,7 @@ nav ul li a:hover {
 
 #mobile-content .column > .top-text h1 {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
 	line-height: 40px;
 	font-weight: bold;
     width: 100%;
@@ -825,7 +825,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: justify;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 40px;
 }
@@ -1122,7 +1122,7 @@ nav ul li a:hover {
 .mobile-subparagraph {
     text-align: justify;
     line-height: 18px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0 0 20px;
 }
@@ -1162,7 +1162,7 @@ nav ul li a:hover {
 #mobile-contact-content .contact-paragraph {
     text-align: center;
     line-height: 30px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 250;
     padding-bottom: 30px;
 }
@@ -1176,7 +1176,7 @@ nav ul li a:hover {
 
 #mobile-contact-content p a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     vertical-align: middle;
 }
